@@ -1,16 +1,25 @@
-# passez
+# PassEZ
 
-A new Flutter project.
+A simple password generator. Really strong!
 
-## Getting Started
+## Building
 
-This project is a starting point for a Flutter application.
+Android: 
+`flutter build apk --release`
+Web: 
+`flutter build web`
+iOS (Requires a Mac for building): 
+`flutter build ios --release`
+Linux: 
+`flutter build apk --release`
+Windows: 
+`flutter build apk --release`
+MacOS (Requires a Mac for building): 
+`flutter build apk --release`
 
-A few resources to get you started if this is your first Flutter project:
+## FAQ
+**Why there isn't a release for MacOS or iOS?**  
+Sadly, I don't have a Mac, required to build to these targets. If you have one, feel free to build it!
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## TODO
+[ ] Build for Mac and iOS (get a Mac).

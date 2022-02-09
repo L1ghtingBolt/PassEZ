@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
   runApp(const MyApp());
@@ -85,6 +86,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: const Icon(Icons.copy),
                 onPressed: () {
                   Clipboard.setData(ClipboardData(text: passWord));
+                  Fluttertoast.showToast(
+                   msg: "Copied to clipboard.",
+                    toastLength: Toast.LENGTH_SHORT,
+                    gravity: ToastGravity.CENTER,
+                );
                 },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.yellow.shade300),
